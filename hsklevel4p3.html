@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HSK Words Quiz</title>
+  <link rel="stylesheet" href="quiz-styles.css">
+  <title>HSK Level4 Part-3 Quiz</title>
+
   <style>
     body {
       margin: 0;
@@ -137,81 +139,69 @@
     #darkModeToggle:hover {
       background-color: #555;
     }
+
+    #container.dark-mode h1 {
+  color: #fff; /* Set the text color to white in dark mode */
+}
+
+
+/* Existing styles */
+
+body.dark-mode header h1 {
+  color: #fff; /* Set the text color to white in dark mode */
+}
+
   </style>
+
 </head>
+
+
+
 <body>
+
   <header>
     <h1>HSK Words Quiz</h1>
     <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  
+  
   </header>
-
+  
+    
   <!-- Navigation Menu -->
   <nav>
     <a href="index.html">Home</a>
     <a href="aboutUS.html">About Us</a>
     <a href="contact.html">Contact Us</a>
   </nav>
+  
+    
 
-  <section>
-    <div class="quiz-box quiz-box1" onclick="location.href='level1.html'">
-      <h2>HSK Level 1 Quiz</h2>
-    </div>
-    <div class="quiz-box quiz-box2" onclick="location.href='hsklevel2.html'">
-      <h2>HSK Level 2 Quiz</h2>
-    </div>
-  </section>
+  
 
-  <section>
-    <div class="quiz-box quiz-box3" onclick="location.href='hsklevel3p1.html'">
-      <h2>HSK Level 3 (Part-1) Quiz.</h2>
-    </div>
-    <div class="quiz-box quiz-box3" onclick="location.href='hsklevel3p2.html'">
-      <h2>HSK Level 3 (Part-2) Quiz.</h2>
-    </div>
-    <div class="quiz-box quiz-box3" onclick="location.href='hsklevel3p3.html'">
-      <h2>HSK Level 3 (Part-3) Quiz.</h2>
-    </div>
-  </section>
 
-  <section>
-    <div class="quiz-box quiz-box4" onclick="location.href='hsklevel4p1.html'">
-      <h2>HSK Level 4 (Part-1) Quiz.</h2>
+  <div class="container">
+    <div class="quiz-container">
+      <button id="start-btn" class="btn">Start Quiz</button>
+      <h2>HSK Level 4(Part-3) Words</h2>
+     
+      <h1 id="question"></h1>
+      <div id="answers" class="answers-container"></div>
+      <div id="feedback" class="feedback-container"></div>
+      <button id="prev-btn" class="btn">Back to Previous Question</button>
+      <button id="reset-btn" class="btn">Reset Question</button>
+      <button id="next-btn" class="btn">Next Question</button>
+      <button id="show-result-btn" class="btn">Show Result</button>
     </div>
-    <div class="quiz-box quiz-box4" onclick="location.href='hsklevel4p2.html'">
-      <h2>HSK Level 4 (Part-2) Quiz.</h2>
-    </div>
-    <div class="quiz-box quiz-box4" onclick="location.href='hsklevel4p3.html'">
-      <h2>HSK Level 4 (Part-3) Quiz.</h2>
-    </div>
-  </section>
+  </div>
+  <script src="quiz-script - hsk4p3.js"></script>
 
-  <section>
-    <div class="quiz-box quiz-box5" onclick="location.href='#'">
-      <h2>HSK Level 4 (Part-4) Quiz.</h2>
-    </div>
-    <div class="quiz-box quiz-box5" onclick="location.href='#'">
-      <h2>HSK Level 4 (Part-5) Quiz.</h2>
-    </div>
-    <div class="quiz-box quiz-box5" onclick="location.href='#'">
-      <h2>HSK Level 4 (Part-6) Quiz.</h2>
-    </div>
-  </section>
-
-  <footer>
-    <p>Copyright © 2024 李如一. All rights reserved.</p>
-    <!-- Footer Links -->
-    <nav>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">FAQ</a>
-    </nav>
-  </footer>
-
+  
   <script>
     function toggleDarkMode() {
       const body = document.body;
       body.classList.toggle('dark-mode');
     }
   </script>
+
 </body>
 </html>

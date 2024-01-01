@@ -1,0 +1,62 @@
+/* Existing styles */
+
+body.dark-mode header h1 {
+  color: #fff; /* Set the text color to white in dark mode */
+}
+
+body.dark-mode, body.dark-mode .quiz-container {
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.quiz-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.answers-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.answers-container button {
+  margin: 5px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feedback-container {
+  margin-top: 10px;
+  font-weight: bold;
+}
