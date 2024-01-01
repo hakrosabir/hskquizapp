@@ -9,104 +9,209 @@
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(to bottom, #ffffff, #ffcc99); /* White to light orange gradient */
+      background-color: #cfe2f3;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
     }
+
     header {
       text-align: center;
       padding: 20px;
+      background-color: #2196F3;
+      color: #fff;
     }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     section {
       display: flex;
       justify-content: space-around;
-      padding: 40px;
+      padding: 20px;
+      flex-wrap: wrap;
     }
+
     .quiz-box {
       width: 200px;
       padding: 10px;
-      margin: 5px;
+      margin: 10px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      background: linear-gradient(to bottom, #ffffff, #ff9966); /* White to orange gradient */
       text-align: center;
       cursor: pointer;
       transition: background 0.3s ease-in-out;
     }
+
     .quiz-box:hover {
-      background: linear-gradient(to bottom, #ffcc99, #ff6633); /* Light orange to darker orange gradient on hover */
+      background: linear-gradient(to bottom, #ffcc99, #ff6633);
     }
+
+    .quiz-box1 {
+      background-color: #a5d6a7;
+      color: #333;
+    }
+
+    .quiz-box2 {
+      background-color: #ffd54f;
+      color: #333;
+    }
+
+    .quiz-box3 {
+      background-color: #ff8a65;
+      color: #fff;
+    }
+
+    .quiz-box4 {
+      background-color: #ef5350;
+      color: #fff;
+    }
+
+    .quiz-box5 {
+      background-color: #8e24aa;
+      color: #fff;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background: #ffffff;
     }
+
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    body.dark-mode header {
+      background-color: #1a237e;
+    }
+
+    body.dark-mode nav {
+      background-color: #555;
+    }
+
+    body.dark-mode nav a {
+      color: #fff;
+    }
+
+    body.dark-mode nav a:hover {
+      text-decoration: underline;
+    }
+
+    body.dark-mode .quiz-box {
+      background-color: #555;
+      color: #fff;
+    }
+
+    body.dark-mode .quiz-box:hover {
+      background: linear-gradient(to bottom, #424242, #212121);
+    }
+
+    body.dark-mode footer {
+      background: #424242;
+    }
+
+    #darkModeToggle {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    #darkModeToggle:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>HSK Level 1 to 3 All Words Quiz</h1>
+    <h1>HSK Words Quiz</h1>
+    <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
   </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutUS.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
   <section>
-    <div class="quiz-box" onclick="location.href='https://hakrosabir.github.io/hsk1quizapp/'">
+    <div class="quiz-box quiz-box1" onclick="location.href='hsklevel1/level1.html'">
       <h2>HSK Level 1 Quiz</h2>
     </div>
-    <div class="quiz-box" onclick="location.href='https://hakrosabir.github.io/hsk2quizapp/'">
+    <div class="quiz-box quiz-box2" onclick="location.href='https://hakrosabir.github.io/hsk2quizapp/'">
       <h2>HSK Level 2 Quiz</h2>
     </div>
   </section>
 
   <section>
-    
-    <div class="quiz-box" onclick="location.href='https://hakrosabir.github.io/hsk3quizpart1/'">
+    <div class="quiz-box quiz-box3" onclick="location.href='https://hakrosabir.github.io/hsk3quizpart1/'">
       <h2>HSK Level 3 (Part-1) Quiz.</h2>
     </div>
-    
-    <div class="quiz-box" onclick="location.href='https://hakrosabir.github.io/hsk3quizpart2/'">
+    <div class="quiz-box quiz-box3" onclick="location.href='https://hakrosabir.github.io/hsk3quizpart2/'">
       <h2>HSK Level 3 (Part-2) Quiz.</h2>
     </div>
-  
-    <div class="quiz-box" onclick="location.href='https://hakrosabir.github.io/hsk3quizp3/'">
+    <div class="quiz-box quiz-box3" onclick="location.href='https://hakrosabir.github.io/hsk3quizp3/'">
       <h2>HSK Level 3 (Part-3) Quiz.</h2>
     </div>
-
   </section>
+
   <section>
-    
-    <div class="quiz-box" onclick="location.href='https://hakrosabir.github.io/hsk4quizp1/'">
+    <div class="quiz-box quiz-box4" onclick="location.href='https://hakrosabir.github.io/hsk4quizp1/'">
       <h2>HSK Level 4 (Part-1) Quiz.</h2>
     </div>
-    
-    <div class="quiz-box" onclick="location.href='https://hakrosabir.github.io/hsk4quizp2/'">
+    <div class="quiz-box quiz-box4" onclick="location.href='https://hakrosabir.github.io/hsk4quizp2/'">
       <h2>HSK Level 4 (Part-2) Quiz.</h2>
     </div>
-  
-    <div class="quiz-box" onclick="location.href='https://hakrosabir.github.io/hsk4quizp3/'">
+    <div class="quiz-box quiz-box4" onclick="location.href='https://hakrosabir.github.io/hsk4quizp3/'">
       <h2>HSK Level 4 (Part-3) Quiz.</h2>
     </div>
-
   </section>
+
   <section>
-    
-    <div class="quiz-box" onclick="location.href='#'">
+    <div class="quiz-box quiz-box5" onclick="location.href='#'">
       <h2>HSK Level 4 (Part-4) Quiz.</h2>
     </div>
-    
-    <div class="quiz-box" onclick="location.href='#'">
+    <div class="quiz-box quiz-box5" onclick="location.href='#'">
       <h2>HSK Level 4 (Part-5) Quiz.</h2>
     </div>
-  
-    <div class="quiz-box" onclick="location.href='#'">
+    <div class="quiz-box quiz-box5" onclick="location.href='#'">
       <h2>HSK Level 4 (Part-6) Quiz.</h2>
     </div>
-  
   </section>
-
-
-
-
-
 
   <footer>
     <p>Copyright © 2024 李如一. All rights reserved.</p>
+    <!-- Footer Links -->
+    <nav>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">FAQ</a>
+    </nav>
   </footer>
+
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+    }
+  </script>
 </body>
 </html>

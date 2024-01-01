@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - HSK Words Quiz</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #cfe2f3;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #2196F3;
+      color: #fff;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contact-info {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .contact-info img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ffffff;
+    }
+
+    /* Dark Mode Styles */
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    body.dark-mode header {
+      background-color: #1a237e;
+    }
+
+    body.dark-mode nav {
+      background-color: #555;
+    }
+
+    body.dark-mode nav a {
+      color: #fff;
+    }
+
+    body.dark-mode nav a:hover {
+      text-decoration: underline;
+    }
+
+    body.dark-mode section {
+      background-color: #555;
+    }
+
+    body.dark-mode footer {
+      background: #424242;
+    }
+
+    #darkModeToggle {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    #darkModeToggle:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us - HSK Words Quiz</h1>
+    <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutUS.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <section>
+    <h2>Contact Information</h2>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <p>Software Engineer 🧑‍💻:  Sabir Ali (李如一)</p>
+      <img src="images/qrcode.jpg" alt="QR Code">
+      <p>Email: hakrosabir@gmail.com</p>
+    </div>
+
+    <p>If you notice any mistakes on our website, please let us know so we can update it. Your feedback is valuable!</p>
+  </section>
+
+  <footer>
+    <p>Copyright © 2024 李如一. All rights reserved.</p>
+    <!-- Footer Links -->
+    <nav>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">FAQ</a>
+    </nav>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>

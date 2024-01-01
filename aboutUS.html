@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - HSK Words Quiz</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #cfe2f3;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #2196F3;
+      color: #fff;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ffffff;
+    }
+
+    /* Dark Mode Styles */
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    body.dark-mode header {
+      background-color: #1a237e;
+    }
+
+    body.dark-mode nav {
+      background-color: #555;
+    }
+
+    body.dark-mode nav a {
+      color: #fff;
+    }
+
+    body.dark-mode nav a:hover {
+      text-decoration: underline;
+    }
+
+    body.dark-mode section {
+      background-color: #555;
+    }
+
+    body.dark-mode footer {
+      background: #424242;
+    }
+
+    #darkModeToggle {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    #darkModeToggle:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Us - HSK Words Quiz</h1>
+    <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutUS.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <section>
+    <h2>Welcome to HSK Words Quiz!</h2>
+    <p>
+      We are passionate about helping you learn and practice Chinese vocabulary through our HSK Words Quiz. 
+      Whether you are a beginner or looking to enhance your Chinese language skills, our quizzes cover 
+      a range of HSK levels to suit your needs. Enjoy the journey of mastering Chinese characters and words with us!
+    </p>
+
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is to provide an interactive and engaging platform for learning Chinese vocabulary. 
+      We aim to make the learning process enjoyable and effective, catering to learners of various levels.
+    </p>
+  </section>
+
+  <footer>
+    <p>Copyright © 2024 李如一. All rights reserved.</p>
+    <!-- Footer Links -->
+    <nav>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">FAQ</a>
+    </nav>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
